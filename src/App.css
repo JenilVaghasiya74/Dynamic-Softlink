@@ -1,0 +1,744 @@
+:root {
+  --text: #375eef;
+  --color: #002e5b;
+  --button: #375eef;
+}
+
+  
+body {
+  font-family: "Jost", sans-serif !important;
+
+}
+
+.spacer {
+  margin: 100px 0 !important;
+}
+
+/* ======== navbar ====== */
+.main-menu a {
+  text-transform: uppercase;
+  font-weight: 500 !important;
+  font-size: 14px;
+  color: black;
+  position: relative;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for menu items */
+.main-menu a::before,
+.main-menu a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 1.5px;
+  background: #375eef;
+  transition: width 0.5s ease;
+}
+
+.main-menu a::before {
+  left: 0;
+  width: 0;
+}
+
+.main-menu a::after {
+  right: 0;
+  width: 0;
+}
+
+.main-menu a:hover::before,
+.main-menu a:hover::after {
+  width: 50%;
+}
+
+.main-menu a:hover {
+  color: #375eef !important;
+}
+
+/* Active state styling */
+.main-menu a.active {
+  color: #375eef !important;
+  font-weight: 700 !important;
+  /* Optional: make active item bold */
+}
+
+.navbar-brand img {
+  height: 24.55px;
+  width: 145px;
+  object-fit: cover;
+}
+
+
+
+/* === offcanvas ====== */
+
+.menu li a {
+  text-decoration: none;
+  list-style: none !important;
+  padding: 7px;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.menu li {
+  padding: 10px;
+  border-bottom: 1px solid black;
+}
+
+.offcanvas-header .btn-close {
+  margin: 0 !important;
+}
+
+
+/*  ======== section s1 ====== */
+
+.section-s1 h5 {
+  color: #375eef !important;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.section-s1 h2 {
+  font-size: 36px;
+  color: var(--color);
+  text-align: center;
+  font-weight: 600;
+}
+
+.cart .text-cart h4 {
+  font-size: 22px;
+  color: var(--color);
+  text-align: center;
+}
+
+.cart .icon {
+
+  background-color: beige;
+  height: 85px;
+  width: 85px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.cart .icon i {
+  font-size: 40px;
+}
+
+.cart {
+  padding: 25px;
+  transition: .5s, border-bottom 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+
+.cart:hover {
+  margin-top: -10px;
+  border-bottom: 2px solid #007bff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*  ====  section s2 ==== */
+
+.section-2 h5 {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.section-2 .box {
+  padding: 50px 0;
+}
+
+.section-2 .box h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--color);
+  letter-spacing: 0px;
+
+}
+
+.section-2 .box {
+  margin: 60 px 10px;
+}
+
+.section-2 .box p {
+  font-size: inherit;
+  line-height: inherit;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.section-2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.section-2 button {
+  background-color: var(--button);
+  padding: 15px 33px;
+  border: 0;
+  font-size: 14px;
+  color: white;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-top: 25px;
+}
+
+/* ======= banner-2 ======= */
+
+.banner-2 h5 {
+  color: #4ccf5f;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.banner-2 img {
+  height: 100%;
+  width: 100%;
+}
+
+.text-main li img {
+  height: 35px;
+  width: 35px;
+  object-fit: cover;
+}
+
+.text-main ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: auto;
+  list-style: none;
+  gap: 40px;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.text-main ul span {
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--color);
+  padding-left: 15px;
+}
+
+.text-main {
+  padding-left: 30px;
+  margin-top: 100px !important;
+}
+
+.text-main h2 {
+  font-size: 32px;
+  color: var(--color);
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* === Counter section === */
+
+.counter-item {
+  text-align: center;
+}
+
+.counter-item span {
+  font-size: 52px;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.counter-item h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #696969;
+}
+
+.link li a {
+  padding-left: 15px;
+  text-decoration: none;
+  color: var(--color);
+  cursor: pointer;
+}
+
+
+/* Fade transition */
+
+.filter-space {
+  margin-top: 100px !important;
+  margin-bottom: 70px;
+}
+
+.filter-space p {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #375eef;
+  margin-bottom: 1px;
+}
+
+.filter-space h2 {
+  font-size: 36px;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: 0px;
+  color: #002e5b;
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+}
+
+/* Optional: Add a smooth fade transition to images */
+.image-container {
+  overflow: hidden;
+}
+
+.fade-image {
+  transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+}
+
+/* ========= filter 2 =========  */
+
+.filter-2 {
+  margin-top: 150px !important;
+}
+
+.filter-2 h1 {
+  font-size: 14px;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.filter-2 h2 {
+  color: var(--color);
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.filter-2 li p {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Basic styling for the list and list items */
+.filter-2 ul.list-unstyled {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* Allows wrapping on smaller screens */
+}
+
+.filter-2 ul.list-unstyled li {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  /* Adjust padding as needed */
+  transition: color 0.3s ease;
+  /* Smooth transition for text color */
+}
+
+/* Style for images and text */
+.filter-2 ul.list-unstyled img {
+  width: 50px;
+  /* Adjust size as needed */
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.filter-2 ul.list-unstyled p {
+  margin: 10px 0 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Pseudo-elements for border-bottom line effect */
+.filter-2 ul.list-unstyled li::before,
+.filter-2 ul.list-unstyled li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  /* Thickness of the border line */
+  background: #3498db;
+  /* Color of the border line */
+  transition: transform 0.3s ease;
+  /* Smooth transition for the line effect */
+}
+
+/* Position the before element at the bottom */
+.filter-2 ul.list-unstyled li::before {
+  bottom: 0;
+  transform: scaleX(0);
+  /* Initial scale to zero (hidden) */
+}
+
+/* Position the after element to create a hover effect */
+.filter-2 ul.list-unstyled li::after {
+  bottom: 0;
+  transform: scaleX(0);
+  /* Initial scale to zero (hidden) */
+}
+
+/* Hover effect for the list item */
+.filter-2 ul.list-unstyled li:hover::before,
+.filter-2 ul.list-unstyled li:hover::after {
+  transform: scaleX(1);
+  /* Scale to full width on hover */
+}
+
+/* Adjust the position of the after element to create a slight delay effect */
+.filter-2 ul.list-unstyled li:hover::after {
+  transform: scaleX(1);
+  transition: transform 0.3s ease 0.15s;
+  /* Add delay to the transition */
+}
+
+.text-ui {
+  margin-top: 50px !important;
+}
+
+.text-ui .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.box-top h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.box-top {
+  padding: 35px 40px;
+}
+
+.box-top p {
+  color: #6d6d6d;
+  font-size: 18px;
+}
+
+.bg-image {
+  background-image: url('../src/image/d2.jpeg');
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.bg-image img {
+  height: 100px;
+  width: 100px;
+}
+
+/* === cart section === */
+.cart-main h2 {
+  font-size: 36px;
+  color: var(--color);
+  font-weight: 600;
+  margin: 25px 0;
+}
+
+.cart-main h3 {
+  font-size: 22px !important;
+  font-weight: 400;
+  color: #696969;
+  margin: 30px 0;
+}
+
+.cart-main .box {
+  padding: 40px 50px;
+  transition: .5s !important;
+
+}
+
+.cart-main .photo {
+  width: 80px;
+  height: 80px;
+  margin: 20px auto;
+}
+
+.cart-main .photo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+
+}
+
+.cart-main .box:hover {
+  margin-top: -15px;
+  border-bottom: 5px solid var(--button) !important;
+  box-shadow: 1px 2px 15px rgb(211, 202, 202) !important;
+}
+
+.cart-main .box p {
+  font-size: 16px;
+  color: #696969;
+}
+
+.cart-main .box h5 {
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.cart-main .box h4 {
+  font-size: 20px;
+  color: #696969;
+}
+
+/* === Footer === */
+.box-footer h3 {
+  font-size: 36px;
+  color: var(--color);
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.box-footer p {
+  font-size: 18px;
+  color: #696969;
+}
+
+.box-footer .input input {
+  width: 350px;
+  height: 50px;
+  border: 0;
+  outline: 0;
+  background-color: #f2e9e9;
+  border-radius: 30px 0 0 30px;
+  padding-left: 20px;
+  font-size: 19px;
+}
+
+.box-footer .input button {
+  padding: 14px 25px;
+  margin-left: -20px;
+  background-color: var(--button);
+  color: white;
+  font-size: 14px;
+  border: 0;
+  border-radius: 30px;
+}
+
+/* === footer link === */
+
+.box-fo-link ul {
+  list-style: none;
+  padding: 0 !important;
+}
+
+.box-fo-link {
+  gap: 100px;
+}
+
+.box-fo-link a {
+  text-decoration: none;
+  color: #696969;
+  font-size: 16px;
+}
+
+.box-fo-link ul li {
+  padding: 10px 0;
+}
+
+.box-fo-link p {
+  margin-bottom: 20px !important;
+}
+
+.bottom h3 {
+  font-size: 15px;
+  color: #6B7190;
+}
+
+.box-fo-link h5 {
+  font-size: 18px;
+  color: #696969;
+}
+
+.footer-text h2 {
+  font-size: 18px;
+  color: #002e5b;
+  font-weight: 600;
+}
+
+.footer-text {
+  margin-top: 100px !important;
+}
+
+@media only screen and (max-width: 600px) {
+
+
+  .box-footer .input input {
+    width: 200px;
+    height: 35px;
+    border: 0;
+    outline: 0;
+    background-color: #e8dbdb;
+    border-radius: 20px 0 0 20px;
+    padding-left: 10px;
+    font-size: 15px;
+  }
+
+  .box-footer .input button {
+    padding: 7px 20px;
+    margin-left: -30px;
+    background-color: var(--button);
+    color: white;
+    border: 0;
+    font-size: 14px;
+    border-radius: 30px;
+  }
+
+  .cart-main .box {
+    padding: 40px 0px;
+    transition: .5s;
+
+  }
+}
+
+.space {
+  margin-top: 100px !important;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+/* Basic styling for the list items */
+.link ul {
+  padding: 0;
+  margin: 0;
+}
+
+.link ul li {
+  position: relative;
+  padding: 10px 0;
+  /* Adjust as needed */
+  border-bottom: 1px solid #ddd;
+  /* Optional: Add a border between items */
+}
+
+/* Styling for the anchor tags */
+.link ul li a {
+  text-decoration: none;
+  color: #333;
+  /* Text color */
+  font-weight: bold;
+  /* Bold text */
+  display: block;
+  padding-right: 20px;
+
+}
+
+/* Add hover effect */
+.link ul li a:hover {
+  color: #007bff;
+}
+
+.link ul li::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.category-item {
+  cursor: pointer;
+  padding: 10px;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.category-item img {
+  display: block;
+  margin: 0 auto;
+}
+
+.category-item p {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.category-item.active {
+  color: blue;
+  border-bottom: 2px solid blue;
+}
+
+/* ScrollToTopButton.css */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+
+.scroll-to-top:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.scroll-to-top:focus {
+  outline: none;
+}
+
+.scroll-to-top svg {
+  margin: 0;
+}

@@ -1,0 +1,253 @@
+ /*  === about page css === */
+ :root {
+     --about: #002e5b;
+ }
+
+ .space-about {
+     margin: 100px 0px !important;
+ }
+
+ .about .text-title h2 {
+     font-size: 60px;
+     color: var(--about);
+ }
+
+ .about .text-title h3 {
+     font-size: 18px;
+     text-transform: uppercase;
+     color: var(--about);
+ }
+
+ .text-title h2 span {
+     color: #375eef !important;
+ }
+
+ /* ==== about section 1 ==== */
+
+ .about_sec_2_image {
+     height: 659px;
+     width: 611px;
+ }
+
+ .about_sec_2_image img {
+     height: 100%;
+     width: 100%;
+ }
+
+ /* ==== about section 2 ==== */
+
+ .box-cart-about {
+     text-align: center;
+     padding: 20px 30px;
+     transition: .5s !important;
+ }
+
+ .box-cart-about .image {
+     height: 80px;
+     width: 80px;
+     margin: 20px auto;
+ }
+
+ .box-cart-about .image img {
+     height: 100%;
+     width: 100%;
+     border-radius: 50%;
+ }
+
+ .box-cart-about h3 {
+     font-size: 22px;
+     color: #002e5b;
+     font-weight: 600;
+     margin: 20px 0;
+ }
+
+ .box-cart-about:hover {
+     margin-top: -10px;
+     border-bottom: 5px solid #375eef;
+ }
+
+ /* === about section 3 === */
+ .about-photo {
+     height: 379px;
+     width: auto;
+ }
+
+ .about-photo {
+     position: relative;
+     overflow: hidden;
+     /* Ensures that any overflow caused by scaling is clipped */
+     border-radius: 5px;
+     /* Rounded corners for the image */
+     cursor: pointer;
+     /* Changes cursor to pointer to indicate interactivity */
+ }
+
+ .about-photo img {
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+     border-radius: 5px;
+     transition: transform 0.3s ease;
+     /* Smooth scaling effect */
+ }
+
+ .about-photo::before {
+     content: "";
+     /* Required for pseudo-elements */
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.5);
+     /* Dark overlay with increased opacity */
+     transition: opacity 0.3s ease;
+     /* Smooth transition for the overlay effect */
+     opacity: 0;
+     /* Initially hidden */
+     border-radius: 5px;
+     /* Matches image border-radius */
+     z-index: 1;
+     /* Ensures overlay appears above the image */
+ }
+
+ .about-photo::after {
+     content: "";
+     position: absolute;
+     top: 5px;
+     /* Border inset from the edge */
+     left: 5px;
+     width: calc(100% - 10px);
+     /* Adjust width to fit within borders */
+     height: calc(100% - 10px);
+     /* Adjust height to fit within borders */
+     border: 2px solid #fff;
+     /* White border */
+     transition: opacity 0.3s ease, transform 0.3s ease;
+     /* Smooth transitions for border visibility and scale */
+     opacity: 0;
+     /* Initially hidden */
+     border-radius: 5px;
+     /* Matches image border-radius */
+     z-index: 2;
+     /* Ensures border is above the overlay */
+     box-sizing: border-box;
+     /* Ensures border size is included in element dimensions */
+ }
+
+ .about-photo:hover img {
+     transform: scale(1.05);
+     /* Slightly enlarges the image on hover */
+ }
+
+ .about-photo:hover::before {
+     opacity: 1;
+     /* Shows the overlay on hover */
+ }
+
+ .about-photo:hover::after {
+     opacity: 1;
+     /* Shows the border on hover */
+     transform: scale(1.05);
+     /* Slightly enlarges the border for a subtle effect */
+ }
+
+
+ /* === about sec 4 === */
+
+ .box-flex {
+     box-shadow: 1px 1px 15px burlywood;
+     padding: 40px !important;
+     border-radius: 5px;
+ }
+
+ .box-flex .text p {
+     color: #007bff;
+     font-size: 22px;
+     font-weight: 500;
+ }
+
+ .box-flex .text h2 {
+     font-size: 52px;
+     font-weight: 500;
+     color: var(--color);
+     margin-bottom: 30px;
+ }
+
+ .box-flex ul li {
+     margin-bottom: 16px;
+     font-size: 18px;
+     padding: 0;
+     font-weight: 500;
+ }
+
+ .box-flex ul i {
+     padding-right: 10px;
+     font-size: 20px;
+     color: #2ed47d;
+ }
+
+ .bg-sec-4 {
+     background-color: #375eef;
+     color: white;
+ }
+
+ .bg-sec-4 h2 {
+
+     color: white !important;
+ }
+
+ .box-flex .button {
+     margin: 35px auto;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+ }
+
+ .box-flex button {
+     padding: 15px 33px;
+     background-color: #2ed47d;
+     border: 0;
+     color: white;
+     text-transform: uppercase;
+     font-size: 13px;
+ }
+
+
+
+
+ @media only screen and (max-width: 600px) {
+     .text-title h2 {
+         font-size: 40px;
+
+     }
+
+     .about_sec_2_image {
+         height: 300px !important;
+         width: 300px !important;
+     }
+
+     .about-photo {
+         height: 250px;
+         width: auto;
+     }
+
+     .box-flex {
+        box-shadow: 1px 1px 15px burlywood;
+        padding: 15px !important;
+        border-radius: 5px;
+    }
+
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {}
+
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {}
+
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {}
+
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {}
